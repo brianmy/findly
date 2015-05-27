@@ -216,35 +216,18 @@ Susan
 														-->
 
 														<!-- APPLY BUTTON (DMP Only) -->
-														<!--
 														<table align="left" class="flex-size apply-btn" width="30%" border="0" cellpadding="0" cellspacing="0" style="padding:10px 10px 10px 0;">
 															<tr>
 																<td style="display: inline-block; width: 100%;">
 																	
 																		<table align="center" bgcolor="#f96204" style="width: 100%; padding: 6px 12px 10px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; -webkit-box-shadow: inset 0 -5px rgba(0,0,0,.2); -moz-box-shadow: inset 0 -5px rgba(0,0,0,.2); box-shadow: inset 0 -5px rgba(0,0,0,.2);">
 																			<tr>
-																				<td align="center" style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: #ffffff;"><a href="http://d.thehive.com/api/v1/analytic?product=email&amp;product_type=buzz&amp;event=click&amp;findly_org={Organization/Id}&amp;fmid={ProfileDetail/ExternalId}&amp;job_title={FeaturedJob/Title}&amp;job_city={FeaturedJob/City}&amp;job_state={FeaturedJob/State}&amp;job_req={FeaturedJob/RequisitionNumber}&amp;email_id={$EmailId}&amp;d={mergeformat:UrlEncode(FeaturedJob/SeoUrl)}" style="display: block; font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none;">Apply - DMP</a></td>
+																				<td align="center" style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: #ffffff;"><a href="http://d.thehive.com/api/v1/analytic?product=email&amp;product_type=buzz&amp;event=click&amp;findly_org={Organization/Id}&amp;fmid={ProfileDetail/ExternalId}&amp;job_title={FeaturedJob/Title}&amp;job_city={FeaturedJob/City}&amp;job_state={FeaturedJob/State}&amp;job_req={FeaturedJob/RequisitionNumber}&amp;email_id={$EmailId}&amp;d={mergeformat:UrlEncode(FeaturedJob/SeoUrl)}" style="display: block; font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none;">Apply</a></td>
 																			</tr>
 																		</table>
 																</td>
 															</tr>
-														</table>
-														-->									
-
-														<!-- APPLY BUTTON (DMP and Bursting Pipe) -->
-														<table align="left" class="flex-size apply-btn" width="30%" border="0" cellpadding="0" cellspacing="0" style="padding:10px 10px 10px 0;">
-															<tr>
-																<td style="display: inline-block; width: 100%;">
-																	
-																		<table align="center" bgcolor="#ed1b2e" style="width: 100%; padding: 6px 12px 10px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; -webkit-box-shadow: inset 0 -5px rgba(0,0,0,.2); -moz-box-shadow: inset 0 -5px rgba(0,0,0,.2); box-shadow: inset 0 -5px rgba(0,0,0,.2);">
-																			<tr>
-																				<td align="center" style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: #ffffff;"><a href="http://d.thehive.com/api/v1/analytic?product=email&amp;product_type=buzz&amp;event=click&amp;findly_org={Organization/Id}&amp;fmid={ProfileDetail/ExternalId}&amp;job_title={FeaturedJob/Title}&amp;job_city={FeaturedJob/City}&amp;job_state={FeaturedJob/State}&amp;job_req={FeaturedJob/RequisitionNumber}&amp;email_id={$EmailId}&amp;d=http%3A%2F%2Fbs.serving-sys.com%2FBurstingPipe%2FadServer.bs%3Fcn%3Dtf%26c%3D20%26mc%3Dclick%26pli%3D11850863%26PluID%3D%26rtu%3D{mergeformat:UrlEncode(FeaturedJob/SeoUrl)}" style="display: block; font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none;">Apply</a></td>
-																			</tr>
-																		</table>
-																</td>
-															</tr>
-														</table>												
-
+														</table>						
 																											
 														<!-- SHARE WITH FRIENDS BUTTON -->
 														<table align="left" class="flex-size" width="65%" border="0" cellpadding="0" cellspacing="0" style="padding:10px 0;">
