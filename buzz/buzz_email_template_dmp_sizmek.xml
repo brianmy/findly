@@ -222,29 +222,12 @@ Susan
 																	
 																		<table align="center" bgcolor="#ed1b2e" style="width: 100%; padding: 6px 12px 10px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; -webkit-box-shadow: inset 0 -5px rgba(0,0,0,.2); -moz-box-shadow: inset 0 -5px rgba(0,0,0,.2); box-shadow: inset 0 -5px rgba(0,0,0,.2);">
 																			<tr>
-																				<td align="center" style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: #ffffff;"><a href="http://d.thehive.com/api/v1/analytic?product=email&amp;product_type=buzz&amp;event=click&amp;findly_org={Organization/Id}&amp;fmid={ProfileDetail/ExternalId}&amp;job_title={FeaturedJob/Title}&amp;job_city={FeaturedJob/City}&amp;job_state={FeaturedJob/State}&amp;job_req={FeaturedJob/RequisitionNumber}&amp;email_id={$EmailId}&amp;d=http%3A%2F%2Fbs.serving-sys.com%2FBurstingPipe%2FadServer.bs%3Fcn%3Dtf%26c%3D20%26mc%3Dclick%26pli%3D11850863%26PluID%3D%26rtu%3D{mergeformat:UrlEncode(FeaturedJob/SeoUrl)}" style="display: block; font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none;">Apply</a></td>
+																				<td align="center" style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: #ffffff;"><a href="http://d.thehive.com/api/v1/analytic?product=email&amp;producttype=buzz&amp;event=click-apply&amp;findlyorg={Organization/Id}&amp;fmid={ProfileDetail/ExternalId}&amp;jobtitle={FeaturedJob/Title}&amp;jobcity={FeaturedJob/City}&amp;jobstate={FeaturedJob/State}&amp;jobreq={FeaturedJob/RequisitionNumber}&amp;emailid={$EmailId}&amp;d=http%3A%2F%2Fbs.serving-sys.com%2FBurstingPipe%2FadServer.bs%3Fcn%3Dtf%26c%3D20%26mc%3Dclick%26pli%3D11850863%26PluID%3D%26rtu%3D{mergeformat:UrlEncode(FeaturedJob/SeoUrl)}" style="display: block; font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none;">Apply</a></td>
 																			</tr>
 																		</table>
 																</td>
 															</tr>
 														</table>												
-
-														<!-- Print Parameters -->
-														<table align="left" class="flex-size apply-btn" width="30%" border="0" cellpadding="0" cellspacing="0" style="padding:10px 10px 10px 0;">
-															<tr>
-																<td style="display: inline-block; width: 100%;">
-																	
-																		<table align="center" bgcolor="#ed1b2e" style="width: 100%; padding: 6px 12px 10px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; -webkit-box-shadow: inset 0 -5px rgba(0,0,0,.2); -moz-box-shadow: inset 0 -5px rgba(0,0,0,.2); box-shadow: inset 0 -5px rgba(0,0,0,.2);">
-																			<tr>
-																				<xsl:value-of select="Organization/Id"/><br/>
-																				<xsl:value-of select="EmailId"/><br/>
-																				<xsl:value-of select="$EmailId"/><br/>
-																			</tr>
-																		</table>
-																</td>
-															</tr>
-														</table>
-
 																											
 														<!-- SHARE WITH FRIENDS BUTTON -->
 														<table align="left" class="flex-size" width="65%" border="0" cellpadding="0" cellspacing="0" style="padding:10px 0;">
@@ -260,7 +243,8 @@ Susan
 																</td>
 															</tr>
 														</table>
-														
+														<!-- DMP IMPRESSION: FEATURED JOB -->
+														<img src="http://d.thehive.com/api/v1/analytic?product=email&amp;producttype=buzz&amp;event=pageview&amp;findlyorg={Organization/Id}&amp;fmid={ProfileDetail/ExternalId}&amp;jobtitle={FeaturedJob/Title}&amp;jobcity={FeaturedJob/City}&amp;jobstate={FeaturedJob/State}&amp;jobreq={FeaturedJob/RequisitionNumber}&amp;emailid={$EmailId}&amp;job_page_pos=0" />
 													</td>
 												</tr>
 											</table>
@@ -287,8 +271,7 @@ Susan
 									<tr>
 										<td align="left" width="96%" style="display: inline-block; padding: 20px 2%;">
 											<!-- SECTION TITLE -->
-											<span style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; font-weight: bold; color: #00529c; margin: 0; background-color: none; border-bottom: none;">Similar Jobs</span>
-											
+											<span style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; font-weight: bold; color: #00529c; margin: 0; background-color: none; border-bottom: none;">Similar Jobs</span>								
 
 											<!-- BEGIN JOB LISTING -->
 											<xsl:for-each select="TopJob/Job">
@@ -322,21 +305,13 @@ Susan
 															<table class="job-buttons flex-size" align="right" width="124" border="0" cellpadding="0" cellspacing="0">
 																<tr>
 																	<td align="right" style="display: block; font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 18px;">
-																		<!--
-																		<a href="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&amp;c=20&amp;mc=click&amp;pli=11850863&amp;PluID=0&amp;rtu=$${$ClickRootPath}?at=er&amp;cp=FDLY-Email%2CJob-Alerts%2CJA-Skillv1&amp;ar={FeaturedJob/RequisitionNumber}&amp;pi={ProfileDetail/ExternalId}&amp;oi={Organization/Id}&amp;ei={$EmailId}&amp;ix=0&amp;d={mergeformat:UrlEncode(SeoUrl)}$$" style="color: #ed1b2e;">Apply</a>
-																		--> 
-																		<a href="http://d.thehive.com/api/v1/analytic?product=email&amp;product_type=buzz&amp;event=click-apply&amp;findly_org={Organization/Id}&amp;fmid={ProfileDetail/ExternalId}&amp;job_title={FeaturedJob/Title}&amp;job_city={FeaturedJob/City}&amp;job_state={FeaturedJob/State}&amp;job_req={FeaturedJob/RequisitionNumber}&amp;email_id={$EmailId}&amp;d=http%3A%2F%2Fbs.serving-sys.com%2FBurstingPipe%2FadServer.bs%3Fcn%3Dtf%26c%3D20%26mc%3Dclick%26pli%3D11850863%26PluID%3D%26rtu%3D{mergeformat:UrlEncode(FeaturedJob/SeoUrl)}" style="color: #ed1b2e;">Apply</a>
-																		<xsl:variable name="job_page_pos" select="position()" />
-																		<img src="http://d.thehive.com/api/v1/analytic?product=email&amp;product_type=buzz&amp;event=pageview&amp;findly_org={Organization/Id}&amp;fmid={ProfileDetail/ExternalId}&amp;job_title={FeaturedJob/Title}&amp;job_city={FeaturedJob/City}&amp;job_state={FeaturedJob/State}&amp;job_req={FeaturedJob/RequisitionNumber}&amp;email_id={$EmailId}&amp;job_page_pos={$job_page_pos}" />
+																		<a href="http://d.thehive.com/api/v1/analytic?product=email&amp;producttype=buzz&amp;event=click-apply&amp;findlyorg={//Organization/Id}&amp;fmid={//ProfileDetail/ExternalId}&amp;jobtitle={Title}&amp;jobcity={City}&amp;jobstate={State}&amp;jobreq={RequisitionNumber}&amp;emailid={$EmailId}&amp;d=http%3A%2F%2Fbs.serving-sys.com%2FBurstingPipe%2FadServer.bs%3Fcn%3Dtf%26c%3D20%26mc%3Dclick%26pli%3D11850863%26PluID%3D%26rtu%3D{mergeformat:UrlEncode(SeoUrl)}" style="color: #ed1b2e;">Apply</a>
 																		<span style="color: #999999;"> | </span>
 																		<a href="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&amp;c=20&amp;mc=click&amp;pli=11850863&amp;PluID=0&amp;rtu=$${$ClickRootPath}?at=er&amp;cp=FDLY-Email%2CJob-Alerts%2CJA-Skillv1&amp;ar={FeaturedJob/RequisitionNumber}&amp;pi={ProfileDetail/ExternalId}&amp;oi={Organization/Id}&amp;ei={$EmailId}&amp;ix=0&amp;d={mergeformat:UrlEncode(SeoUrl)}$$" style="color: #ed1b2e;">Share</a>
 																		
-																		<!-- Debug -->
-																		<br/>
-																		<xsl:value-of select="Organization/Id"/><br/>
-																		<xsl:value-of select="EmailId"/><br/>
-																		<xsl:value-of select="$EmailId"/><br/>
-																		<!-- Debug -->
+																		<!-- DMP IMPRESSION: OTHER JOBS -->
+																		<xsl:variable name="job_page_pos" select="position()" />
+																		<img src="http://d.thehive.com/api/v1/analytic?product=email&amp;producttype=buzz&amp;event=job-view&amp;findlyorg={//Organization/Id}&amp;fmid={//ProfileDetail/ExternalId}&amp;jobtitle={Title}&amp;jobcity={City}&amp;jobstate={State}&amp;jobreq={RequisitionNumber}&amp;emailid={$EmailId}&amp;jobpagepos={$job_page_pos}" />
 																	</td>
 																</tr>
 															</table>
