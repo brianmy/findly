@@ -193,7 +193,8 @@ table {
 														<table align="left" class="flex-size apply-btn" width="30%" border="0" cellpadding="0" cellspacing="0" style="padding:10px 10px 10px 0;">
 															<tr>
 																<td style="display: inline-block; width: 100%;">
-																	<a href="{$ClickRootPath}?at=er&amp;cp=FDLY-Email%2CJob-Alerts%2CJA-UnSkillv1&amp;ar={FeaturedJob/RequisitionNumber}&amp;pi={ProfileDetail/ExternalId}&amp;oi={Organization/Id}&amp;ei={$EmailId}&amp;ix=0&amp;d={mergeformat:UrlEncode(FeaturedJob/SeoUrl)}" style="display: block; font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none;">
+																	<!--<a href="{$ClickRootPath}?at=er&amp;cp=FDLY-Email%2CJob-Alerts%2CJA-UnSkillv1&amp;ar={FeaturedJob/RequisitionNumber}&amp;pi={ProfileDetail/ExternalId}&amp;oi={Organization/Id}&amp;ei={$EmailId}&amp;ix=0&amp;d={mergeformat:UrlEncode(FeaturedJob/SeoUrl)}" style="display: block; font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none;">-->
+																	<a href="http://d.thehive.com/api/v1/analytic?product=email&amp;producttype=buzz&amp;event=click-apply&amp;findlyorgid={Organization/Id}&amp;fmid={ProfileDetail/ExternalId}&amp;jobtitle={FeaturedJob/Title}&amp;jobcity={FeaturedJob/City}&amp;jobstate={FeaturedJob/State}&amp;jobreq={FeaturedJob/RequisitionNumber}&amp;emailid={$EmailId}&amp;job_page_pos=0&amp;d={mergeformat:UrlEncode(FeaturedJob/SeoUrl)}" style="display: block; font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none;">
 																		<table align="center" bgcolor="#5caee2" style="width: 100%; padding: 6px 12px 10px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; -webkit-box-shadow: inset 0 -5px rgba(0,0,0,.2); -moz-box-shadow: inset 0 -5px rgba(0,0,0,.2); box-shadow: inset 0 -5px rgba(0,0,0,.2);">
 																			<tr>
 																				<td align="center" style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: #ffffff;">Apply</td>
@@ -218,7 +219,9 @@ table {
 																</td>
 															</tr>
 														</table>
-														
+
+														<!-- DMP IMPRESSION -->
+														<img src="http://d.thehive.com/api/v1/analytic?product=email&amp;producttype=buzz&amp;event=job-view&amp;findlyorgid={Organization/Id}&amp;fmid={ProfileDetail/ExternalId}&amp;jobtitle={FeaturedJob/Title}&amp;jobcity={FeaturedJob/City}&amp;jobstate={FeaturedJob/State}&amp;jobreq={FeaturedJob/RequisitionNumber}&amp;emailid={$EmailId}&amp;job_page_pos=0" />														
 													</td>
 												</tr>
 											</table>
@@ -279,9 +282,13 @@ table {
 															<table class="job-buttons flex-size" align="right" width="124" border="0" cellpadding="0" cellspacing="0">
 																<tr>
 																	<td align="right" style="display: block; font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 18px;">
-																		<a href="{$ClickRootPath}?at=er&amp;cp=FDLY-Email%2CJob-Alerts%2CJA-UnSkillv1&amp;ar={RequisitionNumber}&amp;pi={/Merge/ProfileDetail/ExternalId}&amp;oi={/Merge/Organization/Id}&amp;ei={$EmailId}&amp;ix={Index}&amp;d={mergeformat:UrlEncode(SeoUrl)}" style="color: #5caee2;">Apply</a>
+																		<!--<a href="{$ClickRootPath}?at=er&amp;cp=FDLY-Email%2CJob-Alerts%2CJA-UnSkillv1&amp;ar={RequisitionNumber}&amp;pi={/Merge/ProfileDetail/ExternalId}&amp;oi={/Merge/Organization/Id}&amp;ei={$EmailId}&amp;ix={Index}&amp;d={mergeformat:UrlEncode(SeoUrl)}" style="color: #5caee2;">Apply</a>-->
+																		<a href="http://d.thehive.com/api/v1/analytic?product=email&amp;producttype=buzz&amp;event=click-apply&amp;findlyorgid={/Merge/Organization/Id}&amp;fmid={/Merge/ProfileDetail/ExternalId}&amp;jobtitle={Title}&amp;jobcity={City}&amp;jobstate={State}&amp;jobreq={RequisitionNumber}&amp;emailid={$EmailId}&amp;jobpagepos={Index}&amp;d={mergeformat:UrlEncode(SeoUrl)}" style="color: #5caee2;">Apply</a>																		
 																		<span style="color: #999999;"> | </span>
 																		<a href="{$ClickRootPath}?at=es&amp;cp=FDLY-Email%2CJob-Alerts%2CJA-UnSkillv1&amp;ar={RequisitionNumber}&amp;pi={/Merge/ProfileDetail/ExternalId}&amp;oi={/Merge/Organization/Id}&amp;ei={$EmailId}&amp;ix={Index}&amp;d={mergeformat:UrlEncode(SeoUrl)}" style="color: #5caee2;">Share</a>
+
+																		<!-- DMP IMPRESSION -->
+																		<img src="http://d.thehive.com/api/v1/analytic?product=email&amp;producttype=buzz&amp;event=job-view&amp;findlyorgid={/Merge/Organization/Id}&amp;fmid={/Merge/ProfileDetail/ExternalId}&amp;jobtitle={Title}&amp;jobcity={City}&amp;jobstate={State}&amp;jobreq={RequisitionNumber}&amp;emailid={$EmailId}&amp;jobpagepos={Index}" />
 																	</td>
 																</tr>
 															</table>
