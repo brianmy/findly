@@ -195,7 +195,8 @@ Thanks for your continued passion for the Brand!
 																	
 																		<table align="center" bgcolor="#e31b22" style="width: 100%; padding: 6px 12px 10px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; -webkit-box-shadow: inset 0 -5px rgba(0,0,0,.2); -moz-box-shadow: inset 0 -5px rgba(0,0,0,.2); box-shadow: inset 0 -5px rgba(0,0,0,.2);">
 																			<tr>
-																				<td align="center" style="font-family: Arial, Helvetica, sans-serif; font-weight: bold;color: #ffffff;"><a href="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&amp;c=20&amp;mc=click&amp;pli=11282065&amp;PluID=0&amp;rtu=$${$ClickRootPath}?at=er&amp;cp=FDLY-Email%2CJob-Alerts%2CJA-UnSkillv1&amp;ar={FeaturedJob/RequisitionNumber}&amp;pi={ProfileDetail/ExternalId}&amp;oi={Organization/Id}&amp;ei={$EmailId}&amp;ix=0&amp;d={mergeformat:UrlEncode(FeaturedJob/SeoUrl)}$$" style="display: block; font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none;">Apply</a></td>
+																				<!--<td align="center" style="font-family: Arial, Helvetica, sans-serif; font-weight: bold;color: #ffffff;"><a href="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&amp;c=20&amp;mc=click&amp;pli=11282065&amp;PluID=0&amp;rtu=$${$ClickRootPath}?at=er&amp;cp=FDLY-Email%2CJob-Alerts%2CJA-UnSkillv1&amp;ar={FeaturedJob/RequisitionNumber}&amp;pi={ProfileDetail/ExternalId}&amp;oi={Organization/Id}&amp;ei={$EmailId}&amp;ix=0&amp;d={mergeformat:UrlEncode(FeaturedJob/SeoUrl)}$$" style="display: block; font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none;">Apply</a></td>-->
+																				<td align="center" style="font-family: Arial, Helvetica, sans-serif; font-weight: bold;color: #ffffff;"><a href="http://d.thehive.com/api/v1/analytic?product=email&amp;producttype=buzz&amp;event=click-apply&amp;findlyorgid={Organization/Id}&amp;fmid={ProfileDetail/ExternalId}&amp;jobtitle={FeaturedJob/Title}&amp;jobcity={FeaturedJob/City}&amp;jobstate={FeaturedJob/State}&amp;jobreq={FeaturedJob/RequisitionNumber}&amp;emailid={$EmailId}&amp;job_page_pos=0&amp;d=http%3A%2F%2Fbs.serving-sys.com%2FBurstingPipe%2FadServer.bs%3Fcn%3Dtf%26c%3D20%26mc%3Dclick%26pli%3D11282065%26PluID%3D%26rtu%3D{mergeformat:UrlEncode(FeaturedJob/SeoUrl)}" style="display: block; font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none;">Apply</a></td>
 																			</tr>
 																		</table>
 																	
@@ -217,7 +218,9 @@ Thanks for your continued passion for the Brand!
 																</td>
 															</tr>
 														</table>
-														
+
+														<!-- DMP IMPRESSION -->
+														<img src="http://d.thehive.com/api/v1/analytic?product=email&amp;producttype=buzz&amp;event=job-view&amp;findlyorgid={Organization/Id}&amp;fmid={ProfileDetail/ExternalId}&amp;jobtitle={FeaturedJob/Title}&amp;jobcity={FeaturedJob/City}&amp;jobstate={FeaturedJob/State}&amp;jobreq={FeaturedJob/RequisitionNumber}&amp;emailid={$EmailId}&amp;job_page_pos=0" />																												
 													</td>
 												</tr>
 											</table>
@@ -279,9 +282,13 @@ Thanks for your continued passion for the Brand!
 															<table class="job-buttons flex-size" align="right" width="124" border="0" cellpadding="0" cellspacing="0">
 																<tr>
 																	<td align="right" style="display: block; font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 18px;">
-																		<a href="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&amp;c=20&amp;mc=click&amp;pli=11282065&amp;PluID=0&amp;rtu=$${$ClickRootPath}?at=er&amp;cp=FDLY-Email%2CJob-Alerts%2CJA-UnSkillv1&amp;ar={RequisitionNumber}&amp;pi={/Merge/ProfileDetail/ExternalId}&amp;oi={/Merge/Organization/Id}&amp;ei={$EmailId}&amp;ix={Index}&amp;d={mergeformat:UrlEncode(SeoUrl)}$$" style="color: #e31b22;">Apply</a>
+																		<!--<a href="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&amp;c=20&amp;mc=click&amp;pli=11282065&amp;PluID=0&amp;rtu=$${$ClickRootPath}?at=er&amp;cp=FDLY-Email%2CJob-Alerts%2CJA-UnSkillv1&amp;ar={RequisitionNumber}&amp;pi={/Merge/ProfileDetail/ExternalId}&amp;oi={/Merge/Organization/Id}&amp;ei={$EmailId}&amp;ix={Index}&amp;d={mergeformat:UrlEncode(SeoUrl)}$$" style="color: #e31b22;">Apply</a>-->
+																		<a href="http://d.thehive.com/api/v1/analytic?product=email&amp;producttype=buzz&amp;event=click-apply&amp;findlyorgid={/Merge/Organization/Id}&amp;fmid={/Merge/ProfileDetail/ExternalId}&amp;jobtitle={Title}&amp;jobcity={City}&amp;jobstate={State}&amp;jobreq={RequisitionNumber}&amp;emailid={$EmailId}&amp;jobpagepos={Index}&amp;d=http%3A%2F%2Fbs.serving-sys.com%2FBurstingPipe%2FadServer.bs%3Fcn%3Dtf%26c%3D20%26mc%3Dclick%26pli%3D11282065%26PluID%3D%26rtu%3D{mergeformat:UrlEncode(SeoUrl)}" style="color: #e31b22;">Apply</a>
 																		<span style="color: #999999;"> | </span>
 																		<a href="{$ClickRootPath}?at=es&amp;cp=FDLY-Email%2CJob-Alerts%2CJA-UnSkillv1&amp;ar={RequisitionNumber}&amp;pi={/Merge/ProfileDetail/ExternalId}&amp;oi={/Merge/Organization/Id}&amp;ei={$EmailId}&amp;ix={Index}&amp;d={mergeformat:UrlEncode(SeoUrl)}" style="color: #e31b22;">Share</a>
+
+																		<!-- DMP IMPRESSION -->
+																		<img src="http://d.thehive.com/api/v1/analytic?product=email&amp;producttype=buzz&amp;event=job-view&amp;findlyorgid={/Merge/Organization/Id}&amp;fmid={/Merge/ProfileDetail/ExternalId}&amp;jobtitle={Title}&amp;jobcity={City}&amp;jobstate={State}&amp;jobreq={RequisitionNumber}&amp;emailid={$EmailId}&amp;jobpagepos={Index}" />
 																	</td>
 																</tr>
 															</table>
